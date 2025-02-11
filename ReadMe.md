@@ -1,4 +1,4 @@
-# Inventory App for DCN Dotun
+# marpayInventoryApp
 
 ## Overview
 
@@ -17,13 +17,13 @@ This Inventory App is designed to help manage and track inventory efficiently. I
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/Inventory-App-for-DCN-Dotun.git
+git clone https://github.com/yourusername/marpayInventoryApp.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd Inventory-App-for-DCN-Dotun
+cd marpayInventoryApp
 ```
 
 3. Install dependencies:
@@ -56,4 +56,4 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-For any inquiries or feedback, please contact Mr Raph on [reoundaunted@gmail.com].
+For any inquiries or feedback, please contact Mr Raph at [reoundaunted@gmail.com].
