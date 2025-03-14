@@ -1,75 +1,137 @@
+/* Global Variables */
+:root {
+  --font-heading: 'Pacifico', cursive;
+  --font-body: cursive;
+  --color-primary: blue;
+  --color-primary-light: #4d94ff; /* Tint of primary */
+  --color-primary-dark: #003380; /* Shade of primary */
+  --color-secondary: rgb(255, 251, 0);
+  --color-secondary-light: #ffff99; /* Tint of secondary */
+  --color-secondary-dark: #b3b300; /* Shade of secondary */
+  --color-neutral-black: rgba(0, 0, 0, 0.8); /* 80% black */
+  --color-neutral-white: rgba(255, 255, 255, 0.952); /* 95% white */
+}
+
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
+  font-family: var(--font-body);
+  color: var(--color-neutral-black);
+  background-color: var(--color-neutral-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+}
+
+/* Container */
 .container {
-    display: flex;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
+/* Login Form */
 .login-form {
-    padding: 40px;
-    width: 300px;
+  padding: 40px;
+  width: 300px;
 }
 
 .login-form h2 {
-    margin: 0 0 20px;
+  margin: 0 0 20px;
 }
 
 .login-form p {
-    margin: 0 0 10px;
+  margin: 0 0 10px;
 }
 
 .login-form label {
-    display: block;
-    margin: 10px 0 5px;
+  display: block;
+  margin: 10px 0 5px;
 }
 
 .login-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
+/* Buttons */
 .login-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--color-neutral-black);
+  color: var(--color-neutral-white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--font-heading); /* Use Pacifico font */
+  font-weight: bold; /* Make text bold */
+}
+
+.login-form button:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-secondary);
 }
 
 .login-form .social-login {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 
 .login-form .social-login button {
-    width: 30%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    cursor: pointer;
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
+.login-form .social-login button.facebook {
+  background-color: var(--color-primary-light);
+  color: var(--color-neutral-white);
+}
+
+.login-form .social-login button.google {
+  background-color: var(--color-secondary-light);
+  color: var(--color-neutral-black);
+}
+
+.login-form .social-login button.apple {
+  background-color: var(--color-neutral-black);
+  color: var(--color-neutral-white);
+}
+
+/* Login Image */
 .login-image {
-    width: 300px;
-    background-color: #e0e0e0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: bolder;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .login-image {
+    display: none;
+  }
 }
